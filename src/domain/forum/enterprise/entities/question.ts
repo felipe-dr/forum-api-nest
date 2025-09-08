@@ -16,7 +16,7 @@ export interface QuestionProps {
   attachments: QuestionAttachmentList
   content: string
   createdAt: Date
-  updatedAt?: Date
+  updatedAt?: Date | null
 }
 export class Question extends AggregateRoot<QuestionProps> {
   get authorId() {
