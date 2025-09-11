@@ -10,7 +10,7 @@ import { z } from 'zod'
 
 import { CurrentUser } from '@/infra/auth/current-user.decorator'
 import { UserPayload } from '@/infra/auth/jwt.strategy'
-import { ZodValidationPipe } from '@/infra/pipes/zod-validation.pipe'
+import { ZodValidationPipe } from '@/infra/http/pipes/zod-validation.pipe'
 
 import { EditQuestionUseCase } from '@/domain/forum/application/use-cases/edit-question'
 
